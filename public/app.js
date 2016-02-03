@@ -26,7 +26,7 @@ function showChart(index) {
   if(isIndex) {
     $('.score').text('Your name is #' + (index+1) + ' in terms of campaing funding. You will earn an estimate of $' + names[index].avg.toFixed(2) + ' for your campaign!')
   } else {
-    $('.score').html('Your name was not found :( Please <a href="/">try again.</a>')    
+    $('.score').html('Your name was not found :( Please <a href="#" onclick="window.location=window.location;">try again</a>.')    
   }
   var $p = $('#chart').parent()
   $('#chart').width($p.width())
